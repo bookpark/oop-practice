@@ -1,4 +1,4 @@
-package org.example;
+package org.example.calculator;
 
 import org.example.calculator.Calculator;
 import org.junit.jupiter.api.DisplayName;
