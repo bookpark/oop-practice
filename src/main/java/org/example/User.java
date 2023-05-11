@@ -4,12 +4,11 @@ public class User {
 
     private String password;
 
-    public void initPassword() {
-        RandomPasswordGenerator randomPasswordGenerator = new RandomPasswordGenerator();
-        String randomPassword = randomPasswordGenerator.generatePassword();
+    public void initPassword(PasswordGenerator passwordGenerator) {
+        String password = passwordGenerator.generatePassword();
 
-        if (randomPassword.length() >= 8 && randomPassword.length() <= 12) {
-            this.password = randomPassword;
+        if (password.length() >= 8 && password.length() <= 12) {
+            this.password = password;
         }
     }
 
