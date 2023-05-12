@@ -13,7 +13,7 @@ public class Cook {
     }
 
     public Cook(MenuItem menuItem) {
-        this.name = menuItem.getMenu();
+        this.name = menuItem.getName();
         this.price = menuItem.getPrice();
     }
 
